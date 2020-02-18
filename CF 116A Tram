@@ -1,0 +1,32 @@
+import java.util.*;
+public class Main
+{
+    
+	public static void main(String[] args) 
+	{
+	    Scanner sc = new Scanner(System.in);
+	    
+	    int n = sc.nextInt();
+	    int a=0;
+	    int b=0;
+	    int max=-100;
+	    int total = 0;
+	    
+	    while(n!=0)
+	    {
+	        a = sc.nextInt();
+	        b = sc.nextInt();
+	        
+	        total  = total + b - a;
+	        if (max<total)
+	        {
+	            max = total;
+	        }
+	        
+	        
+	        
+	        n--;
+	    }
+	    System.out.println(max);
+    }
+}
