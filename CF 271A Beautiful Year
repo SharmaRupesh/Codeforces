@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{
+    static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{  
+	   int x = sc.nextInt();
+	  
+	   while(true)
+	   {
+	      x++;
+	      int a = x / 1000;
+          int b = x / 100 % 10;
+          int c = x / 10 % 10;
+          int d = x % 10;
+          if (a!=b &&a!=c &&a!=d &&c!=b &&d!=b &&c!=d)
+          {
+              break;
+          }
+	   }
+	   System.out.println(x);
+	   	   
+	  
+	}
+}
