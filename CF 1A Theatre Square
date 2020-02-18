@@ -1,0 +1,14 @@
+import java.util.Scanner;
+ 
+public class Problem1A
+{
+    static Scanner sc = new Scanner (System.in);
+    public static void main(String args[])
+    {
+        double n = sc.nextInt();
+		double m = sc.nextInt();
+		double a = sc.nextInt();
+		
+		System.out.println((long)(Math.ceil(n/a) * Math.ceil(m/a)));	
+    }
+}
