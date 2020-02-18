@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main
+{
+    static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+	    int t = sc.nextInt();
+	    t++;
+	    int x=0;
+	    while(t>0)
+	    {
+	        String s = sc.nextLine();
+	        if (s.equals("X++"))
+	        {
+	            x++;
+	        }
+	        else if (s.equals("++X"))
+	        {
+	            ++x;
+	        }
+	        if (s.equals("X--"))
+	        {
+	            x--;
+	        }
+	        if (s.equals("--X"))
+	        {
+	            --x;
+	        }
+	        t--;
+	    }
+	    System.out.println(x);
+	}
+}
