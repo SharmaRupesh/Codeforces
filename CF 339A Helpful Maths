@@ -1,0 +1,35 @@
+import java.util.*;
+import java.util.Scanner;
+public class Main
+{
+    static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+	    String result="";
+	    String s = sc.nextLine();
+	    int len = s.length();
+	    int n = (len+1)/2;
+	    ArrayList<Integer> list = new ArrayList();
+	    for (int i=0;i<len;i++)
+	    {
+	        if (s.charAt(i)=='+')
+	        {
+	            continue;
+	        }
+	        else
+	        {
+	            int x= Character.getNumericValue(s.charAt(i));
+	            list.add(x);
+	        }
+	    }
+	    Collections.sort(list);
+	    for (int i:list)
+	    {
+	        result = result+i+"+";
+	    }
+	    for(int i=0;i<result.length()-1;i++)
+	    {
+	        System.out.print(result.charAt(i));
+	    }
+	}
+}
