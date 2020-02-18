@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main
+{
+    static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+	    String s = sc.nextLine();
+	    int count=1;
+	    int max=0;
+	    for (int i =1;i<s.length();i++)
+	    {
+	        if (s.charAt(i)==s.charAt(i-1))
+	        {
+	            count=count+1;
+	            if (max<count)
+	            {
+	                max=count;
+	            }
+	        }
+	        else
+	        {
+	            count=1;
+	        }
+	        
+	    }
+	    if(max>=7)
+	    {
+	        System.out.println("YES");
+	    }
+	    else
+	    {
+	        System.out.println("NO");
+	    }
+	    
+	}
+}
