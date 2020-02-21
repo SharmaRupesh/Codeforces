@@ -1,0 +1,23 @@
+import java.util.*;
+ 
+public class HelloWorld{
+ 
+     public static void main(String []args)
+     {
+         Scanner sc = new Scanner(System.in);
+         
+         int n = sc.nextInt();
+         int sum = 0;
+         
+         if(n%5==0)
+         {
+             int ans = n/5;
+             System.out.println(ans);
+         }
+         else
+         {
+             int ans = n/5 + 1;
+             System.out.println(ans);
+         }
+     }
+}
