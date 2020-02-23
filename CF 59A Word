@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class HelloWorld
+{
+     public static void main(String []args)
+     {
+         Scanner sc = new Scanner(System.in);
+         int lcount=0;
+         int ucount=0;
+         
+         String s = sc.next();
+         boolean b1;
+         for(int i=0;i<s.length();i++)
+         {
+             char c = s.charAt(i);
+             b1 = Character.isLowerCase(c);
+             if(b1)
+             {
+                 lcount++;
+             }
+             else 
+             {
+                 ucount++;
+             }
+         }
+         if(lcount>=ucount)
+         {
+             System.out.println(s.toLowerCase());
+         }
+         else if(ucount>lcount)
+         {
+             System.out.println(s.toUpperCase());
+         }
+     }
+}
