@@ -1,0 +1,39 @@
+import java.util.*;
+public class HelloWorld
+{
+
+     public static void main(String []args)
+     {
+         Scanner sc = new Scanner (System.in);
+         int n = sc.nextInt();
+         String result = "",s="";
+         for(int i=0;i<n;i++)
+         {
+             if(i%2==0)
+             {
+                 s = "I hate it";
+             }
+             else
+             {
+                 s = "I love it";
+             }
+             result = result + " " + s;
+         }
+         
+         String arr[] = result.trim().split(" ",3*n);
+         for(int i=0;i<arr.length-1;i++)
+         {
+             if(arr[i].equals("it"))
+             {
+                 arr[i]="that";
+             }
+         }
+         String ans="";
+         for(String i:arr)
+         ans = ans + i + " ";
+         
+         System.out.println(ans.trim());
+         
+         
+     }
+}
