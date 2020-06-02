@@ -1,0 +1,20 @@
+import java.util.*;
+public class HelloWorld
+{
+    public static void main(String []args)
+    {
+        Scanner sc = new Scanner(System.in);
+        String s1 = sc.next();
+        String s2 = sc.next();
+        int i=s1.length()-1;
+
+        StringBuilder result=new StringBuilder();
+        while(i>=0)
+        {
+            result.append((int)s1.charAt(i)^(int)s2.charAt(i));
+            i--;
+        }
+        System.out.println(result.reverse());
+        
+    }
+}
